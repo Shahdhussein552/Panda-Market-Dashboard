@@ -5,7 +5,6 @@
 
 [![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![DAX](https://img.shields.io/badge/DAX-Data%20Analysis%20Expressions-0078D4?style=for-the-badge)](https://learn.microsoft.com/en-us/dax/)
-[![Data Modeling](https://img.shields.io/badge/Schema-Star%20Schema-2EA44F?style=for-the-badge)](#-data-preparation)
 [![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
 
 <p align="center">
@@ -131,19 +130,6 @@ The data model represents a retail ecosystem: one transaction table surrounded b
 | **`Dim_Country`** | [`Dim_Country.csv`](Dim_Country.csv) | 4 | `CountryID`, `Country`, `Region`. |
 | **`Dim_Date`** | [`Dim_Date.csv`](Dim_Date.csv) | 1,095 | `DateID`, `Date`, `Day`, `Month`, `Quarter`, `Year`. |
 
-### Data Model (Star Schema)
-
-```mermaid
-erDiagram
-    Dim_Category ||--o{ Dim_SubCategory : has
-    Dim_SubCategory ||--o{ Dim_Product : has
-    Dim_Product ||--o{ Fact_Sales : sold_in
-    Dim_Customer ||--o{ Fact_Sales : places
-    Dim_Date ||--o{ Fact_Sales : on
-    Dim_Location ||--o{ Dim_Customer : lives_in
-    Dim_Country ||--o{ Dim_Location : contains
-```
-
 ---
 
 ## 🧹 Data Preparation
@@ -152,7 +138,7 @@ erDiagram
 
 1. **Importing & Schema Verification:** Loaded all CSV files and checked relational keys between tables.
 2. **Data Type Casting:** Applied currency format to financial columns, whole numbers to quantities, and date format to timestamps.
-3. **Star Schema Implementation:** Related `Fact_Sales` to the dimension tables using one-to-many (1:*) relationships with single cross-filter direction. Product, subcategory, and category tables form one chain, as do customer, location, and country.
+3. **Relationships:** Related `Fact_Sales` to the dimension tables using one-to-many (1:*) relationships with single cross-filter direction. Product, subcategory, and category tables form one chain, as do customer, location, and country.
 
 ---
 
@@ -242,14 +228,14 @@ AOV = DIVIDE ( [Total Sales], [Total Orders] )
 
 ## 🎬 Project Demonstration
 
-A full walkthrough of the dashboard is available as a video:
+A full walkthrough of the dashboard is available as a video. Click the image or the link below to watch it:
 
 <p align="center">
-  <a href="Panda_Market_Dashboard.mp4">
+  <a href="Panda_Market_Dashboard.mp4?raw=true">
     <img src="D1.PNG" alt="Watch the project demo video" width="60%" />
   </a>
   <br />
-  <b>▶️ <a href="Panda_Market_Dashboard.mp4">Watch the demo video (Panda_Market_Dashboard.mp4)</a></b>
+  <b>▶️ <a href="Panda_Market_Dashboard.mp4?raw=true">Watch the demo video</a></b>
 </p>
 
 ---
@@ -258,8 +244,8 @@ A full walkthrough of the dashboard is available as a video:
 
 | File | Description |
 | :--- | :--- |
-| 📊 [**Panda_Dashboard.pbix**](Panda_Dashboard.pbix) | The Power BI report file. Open it with **Power BI Desktop**. |
-| 🎬 [**Panda_Market_Dashboard.mp4**](Panda_Market_Dashboard.mp4) | Video walkthrough of the project. |
+| 📊 [**Panda_Dashboard.pbix**](Panda_Dashboard.pbix?raw=true) | The Power BI report file. Open it with **Power BI Desktop**. |
+| 🎬 [**Panda_Market_Dashboard.mp4**](Panda_Market_Dashboard.mp4?raw=true) | Video walkthrough of the project. |
 | 📁 [Dataset CSV files](#-dataset) | All eight source tables, in the repository root. |
 
 ---
