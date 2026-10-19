@@ -231,11 +231,11 @@ AOV = DIVIDE ( [Total Sales], [Total Orders] )
 A full walkthrough of the dashboard is available as a video. Click the image or the link below to watch it:
 
 <p align="center">
-  <a href="Panda_Market_Dashboard.mp4?raw=true">
+  <a href="Panda%20Market%20Dashboard.mp4">
     <img src="D1.PNG" alt="Watch the project demo video" width="60%" />
   </a>
   <br />
-  <b>▶️ <a href="Panda_Market_Dashboard.mp4?raw=true">Watch the demo video</a></b>
+  <b>▶️ <a href="Panda%20Market%20Dashboard.mp4">Watch the demo video</a></b>
 </p>
 
 ---
@@ -244,9 +244,16 @@ A full walkthrough of the dashboard is available as a video. Click the image or 
 
 | File | Description |
 | :--- | :--- |
-| 📊 [**Panda_Dashboard.pbix**](Panda_Dashboard.pbix?raw=true) | The Power BI report file. Open it with **Power BI Desktop**. |
-| 🎬 [**Panda_Market_Dashboard.mp4**](Panda_Market_Dashboard.mp4?raw=true) | Video walkthrough of the project. |
-| 📁 [Dataset CSV files](#-dataset) | All eight source tables, in the repository root. |
+| 📊 [**Panda Dashboard.pbix**](Panda%20Dashboard.pbix?raw=true) | The Power BI report file. Open it with **Power BI Desktop**. |
+| 🎬 [**Panda Market Dashboard.mp4**](Panda%20Market%20Dashboard.mp4) | Video walkthrough of the project. |
+| 📁 [Fact_Sales.csv](Fact_Sales.csv) | Sales transactions. |
+| 📁 [Dim_Product.csv](Dim_Product.csv) | Product dimension. |
+| 📁 [Dim_SubCategory.csv](Dim_SubCategory.csv) | Subcategory dimension. |
+| 📁 [Dim_Category.csv](Dim_Category.csv) | Category dimension. |
+| 📁 [Dim_Customer.csv](Dim_Customer.csv) | Customer dimension. |
+| 📁 [Dim_Location.csv](Dim_Location.csv) | Location dimension. |
+| 📁 [Dim_Country.csv](Dim_Country.csv) | Country dimension. |
+| 📁 [Dim_Date.csv](Dim_Date.csv) | Date dimension. |
 
 ---
 
@@ -255,8 +262,8 @@ A full walkthrough of the dashboard is available as a video. Click the image or 
 ```
 📦 Panda-Market-Dashboard
  ┣ 📄 README.md
- ┣ 📊 Panda_Dashboard.pbix
- ┣ 🎬 Panda_Market_Dashboard.mp4
+ ┣ 📊 Panda Dashboard.pbix
+ ┣ 🎬 Panda Market Dashboard.mp4
  ┣ 🖼️ D1.PNG  (Home)
  ┣ 🖼️ D2.PNG  (Sales Overview)
  ┣ 🖼️ D3.PNG  (Products)
