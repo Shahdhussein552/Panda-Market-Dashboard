@@ -1,115 +1,82 @@
-# 🐼 Panda Market Sales Analytics Dashboard (Power BI)
+<div align="center">
 
-An end-to-end, interactive **Power BI** business intelligence dashboard designed for **Panda Market** to monitor sales performance, optimize profitability, analyze product distribution, understand customer demographics, and track regional market penetration.
+# 🐼 Panda Market — Retail Analytics & Business Intelligence Dashboard
+
+[![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
+[![DAX](https://img.shields.io/badge/DAX-Data%20Analysis%20Expressions-0078D4?style=for-the-badge)](https://learn.microsoft.com/en-us/dax/)
+[![Data Modeling](https://img.shields.io/badge/Schema-Star%20Schema-2EA44F?style=for-the-badge)](#-data-model--architecture)
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
+
+<p align="center">
+  <b>A comprehensive, interactive Power BI report transforming multi-regional retail sales data into actionable strategic insights.</b>
+  <br />
+  <i>Track, Manage, Grow — Your Panda World in One Screen.</i>
+</p>
+
+</div>
 
 ---
 
-## 📌 Executive Summary
-The goal of this project is to transform raw retail sales data into actionable business insights. The report provides a seamless multi-page reporting experience with dynamic page navigation and collapsible filter panels (powered by Bookmarks & Selection panes).
+## 📌 Project Overview
+
+The **Panda Market Analytics Dashboard** provides management with a 360-degree view of retail performance. Built with custom navigation, dynamic bookmark-driven filter drawers, and robust DAX calculations, it enables stakeholders to evaluate:
+
+- **Financial Health:** Revenue, product cost structures, and operating profit margins.
+- **Product Velocity:** Fast-moving items vs. high-margin categories.
+- **Customer Segmentation:** Purchasing behavior across demographics, genders, and quarterly cycles.
+- **Geographic Penetration:** Performance across 4 countries, multiple states/governorates, and top cities.
 
 ---
 
-## 📊 Dashboard Pages & Insights
+## 📑 Report Structure & Modules
+
+| # | Page | Core Focus | Key Visualizations |
+|---|------|------------|---------------------|
+| 1 | **Home Page** | Brand landing & routing | Navigation portal to all analytical modules |
+| 2 | **Sales Overview** | High-level sales performance | KPI cards, category column chart, top products, sales gauge |
+| 3 | **Products** | Margins & product-level trends | Product profit margin ranking, subcategory revenue, Top 5 products |
+| 4 | **Customers** | Demographic & time-based analysis | Sales by Location ID, quarterly trend line, gender split, revenue by region |
+| 5 | **Location Overview** | Macro-to-micro geographic breakdown | Country distribution, continental revenue share (Donut), top states, city sales |
+
+---
+
+## 🔍 Detailed Page Breakdown
 
 ### 1. 🏠 Home Page
-* Welcome interface featuring brand identity and direct navigation buttons to all report modules:
-  * **Sales Overview**
-  * **Products**
-  * **Customers**
-  * **Location Overview**
-
----
+- Centralized portal welcoming stakeholders to the dashboard.
+- Seamless one-click page navigation buttons directly linked to each department's view.
 
 ### 2. 📈 Sales Overview
-* **Key KPIs:**
-  * **Total Sales**
-  * **Total Cost**
-  * **Total Profit**
-* **Visuals & Charts:**
-  * **Category Breakdown:** Total Sales across categories (`Electronics`, `Clothing`, `Books`, etc.).
-  * **Product Contribution:** Top-performing products by sales revenue.
-  * **Category Revenue Share:** Donut chart showcasing revenue distribution across categories.
-  * **Gauge Visual:** Sales performance indicator against business targets.
-  * **Interactive Filter Panel:** Collapsible drawer filtering by Month, Category, SubCategory, Product, Quantity, and Amount.
-
----
+- **Key Metrics:** `Total Sales`, `Total Cost`, `Total Profit`.
+- **Category Sales:** Revenue breakdown across `Electronics`, `Clothing`, `Books`, and `Home Appliances`.
+- **Top Product Performance:** Horizontal bar chart identifying highest revenue-generating stock-keeping units (SKUs).
+- **Target Tracking:** Gauge chart measuring sales pace against business milestones.
+- **Slide-Out Slicer Panel:** Collapsible drawer filtering by Month, Product, SubCategory, and Quantity.
 
 ### 3. 📦 Products Insights
-* **Key KPIs:**
-  * **Profit Margin %**
-  * **Total Orders**
-  * **Quantity Sold**
-* **Visuals & Charts:**
-  * **Profit Margin by Product:** Top profitable products vs. high-volume low-margin items.
-  * **Total Profit by Category:** Category contribution to operating profit.
-  * **Revenue by SubCategory:** Granular sales performance across subcategories.
-  * **Top 5 Products by Quantity:** Fast-moving consumer goods (FMCG) ranking.
-
----
+- **Key Metrics:** `Profit Margin %`, `Total Orders`, `Sum of Quantity`.
+- **Margin Analysis:** Detailed bar chart contrasting high-margin vs. high-volume products.
+- **Category Contribution:** Operating profit contribution by product vertical.
+- **SubCategory Breakdown:** Granular revenue tracking for product lines.
+- **Fast-Moving Goods:** Top 5 products ranked by quantity sold.
 
 ### 4. 👥 Customers Insights
-* **Key KPIs:**
-  * **Total Revenue**
-  * **Sum of Quantity**
-  * **Average Order Value (AOV)**
-* **Visuals & Charts:**
-  * **Sales by Location ID:** Customer purchase volume by geographical identifiers.
-  * **Sales by Quarter:** Quarterly purchasing trends and seasonality analysis.
-  * **Gender Distribution:** Revenue split between male and female customer segments.
-  * **Revenue by Region:** Macro-level performance across MENA, North America, and Europe.
+- **Key Metrics:** `Total Revenue`, `Sum of Quantity`, `Average Order Value (AOV)`.
+- **Quarterly Seasonality:** Line chart highlighting revenue trajectory across Q1 to Q4.
+- **Gender Dynamics:** Donut visual analyzing purchasing power between male and female customer bases.
+- **Regional Footprint:** Customer revenue split across MENA, North America, and Europe.
+
+### 5. 🌍 Location Overview (Geographical Performance)
+- **Key Metrics:** `Total Revenue`, `Sum of Quantity`, `Average Order Value (AOV)`.
+- **Country Benchmarks:** Comparative revenue across Egypt, Saudi Arabia, USA, and Germany.
+- **Continental Share:** Visual representation of MENA vs. Western market penetration.
+- **State & City Analysis:**
+  - *Top 5 Profits by State:* Identification of the most profitable administrative territories.
+  - *Total Sales by City:* Granular performance tracking (Cairo, Riyadh, Alexandria, Giza, etc.).
+- **Interactive Cascading Filters:** Slice by Region, Country, State, City, and Month.
 
 ---
 
-### 5. 🌍 Location Overview (Geographical Analysis)
-* **Key KPIs:**
-  * **Total Revenue**
-  * **Sum of Quantity**
-  * **Average Order Value (AOV)**
-* **Visuals & Charts:**
-  * **Total Sales by Country:** Market share across operating countries (Egypt, Saudi Arabia, USA, Germany).
-  * **Sales Share by Region:** Donut chart detailing continental market distribution.
-  * **Top 5 Profits by State:** States/Governorates generating the highest operating profit.
-  * **Total Sales by City:** City-level revenue ranking (Cairo, Riyadh, Alexandria, Giza, etc.).
-  * **Location Filter Panel:** Multi-level cascading slicers for Country, Region, State, City, and Month.
+## 🗄️ Data Model & Architecture
 
----
-
-## 🛠️ Data Model & DAX Measures
-
-### Star Schema Architecture:
-* **Fact Table:** `Fact_Sales`
-* **Dimension Tables:** 
-  * `Dim_Product`
-  * `Dim_Category`
-  * `Dim_SubCategory`
-  * `Dim_Customer`
-  * `Dim_Country`
-  * `Dim_Location`
-  * `Dim_Date`
-
-### Key DAX Measures:
-```dax
--- Total Sales Revenue
-Total Sales = SUM(Fact_Sales[TotalAmount])
-
--- Total Quantity Sold
-Total Quantity = SUM(Fact_Sales[Quantity])
-
--- Total Order Count
-Total Orders = DISTINCTCOUNT(Fact_Sales[InvoiceNo])
-
--- Average Order Value (AOV)
-AOV = DIVIDE([Total Sales], [Total Orders], 0)
-
--- Total Product Cost
-Total Cost = 
-SUMX(
-    Fact_Sales, 
-    Fact_Sales[Quantity] * RELATED(Dim_Product[Cost])
-)
-
--- Operating Profit
-Total Profit = [Total Sales] - [Total Cost]
-
--- Profit Margin Percentage
-Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
+The report is built on a **Star Schema** to ensure optimal performance, scalability, and clean relationship paths:
